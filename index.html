@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	
+	<meta charset="UTF-8">
+	
+	<title>Crystal Math</title>
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet">
+    
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+
+<body class="marg-center">
+
+	
+	<div class="col-md-12 font-fam pad-3-10 txtalgn-cntr">
+	  <h1 class="fs-50 pad-b-10">Crystal Math</h1>
+	  <p class="fs-20 line-h">Your goal will be to match the target number exactly. Clicking on the four crystals below will increase your number by various, unknown amounts. Don't get too comfortable because the crystals' values change every game along with the target number.</p>
+	  <!--<p><a class="btn btn-primary btn-lg">Learn more</a></p>-->
+	</div>
+
+
+	<div class="col-md-12 font-fam fs-50 pad-3-10 txtalgn-cntr">
+		<p id="endGameMessage"></p>
+	</div>
+
+
+	<div class="row font-fam pad-3-10 txtalgn-cntr">
+
+		<div class="col-md-6 col-xs-6">
+			<p class="fs-20">Target Number</p>
+			<p class="fs-50" id="target-number"></p>
+		</div>
+
+		<div class="col-md-6 col-xs-6">
+			<p class="fs-20">Your Number</p>
+			<p class="fs-50" id="counter"></p>
+		</div>
+
+	</div>
+
+
+	<div class="row pad-3-10">
+        
+        <div class="col-md-3 col-sm-6">
+          <div>
+            <img class="img-responsive" src="assets/images/crystals-white.png" alt="White Crystal"></a>
+          </div>
+        </div> 
+       
+        <div class="col-md-3 col-sm-6">
+          <div>
+            <img class="img-responsive" src="assets/images/crystals-blue.png" alt="Blue Crystal" id="blue-crystal"></a>
+          </div>
+        </div>
+
+         <div class="col-md-3 col-sm-6">
+          <div>
+            <img class="img-responsive" src="assets/images/crystals-green.png" alt="Green Crystal"></a>
+          </div>
+        </div>
+      
+		<div class="col-md-3 col-sm-6">
+          <div>
+            <img class="img-responsive" src="assets/images/crystals-purple.png" alt="Purple Crystal" id="purple-crystal"></a>
+          </div>
+        </div>
+
+	</div>
+
+
+	<div class="row border-b border-t font-fam pad-10-10pct txtalgn-cntr">
+
+		<div class="col-sm-6 col-xs-6">
+			<p>Won: #</p>
+		</div>
+
+		<div class="col-sm-6 col-xs-6">
+			<p>Loss: #</p>
+		</div>
+
+	</div>
+	
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+	<script src="assets/javascript/game.js" type="text/javascript"></script>
+
+</body>
+
+</html>

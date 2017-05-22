@@ -1,0 +1,24 @@
+.border-b{border-bottom: dotted 2px #000000;}
+.border-t{border-top: dotted 2px #000000;}
+
+.bg-none{background-color: none;}
+.bg-img{background-image: url('../images/background.bmp');}
+.bg-norpt{background-repeat: no-repeat;}
+.bg-size{background-size: 100%;}
+
+.font-bold{font-weight: bold;}
+.font-fam{font-family: 'Quicksand', sans-serif;}
+.font-white{color: #ffffff;}
+
+.fs-20{font-size: 20px;}
+.fs-50{font-size: 50px;}
+
+.line-h{line-height: 26px;}
+
+.marg-center{margin:5% auto;}
+
+.pad-3-10{padding: 3% 10%;}
+.pad-10-10pct{padding: 10px 10%;}
+.pad-b-10{padding-bottom: 10px;}
+
+.txtalgn-cntr{text-align: center;}
