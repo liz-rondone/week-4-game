@@ -1,3 +1,5 @@
+
+
 var targetNumber = "";
 var counter = 0;
 var won = 0;
@@ -14,6 +16,7 @@ function startGame() {	//no argument
 	var blueCrystal = getRandomArbitrary(1,12);
 	var whiteCrystal = getRandomArbitrary(1,12);
 	var greenCrystal = getRandomArbitrary(1,12);
+	var crystalValue;
 	counter = 0;
 	$(".image-responsive").click(crystalValue);
 	$("#counter").text(counter);
@@ -44,12 +47,14 @@ $(".img-responsive").on("click", function() {
     // Using the $(this) keyword specifies that we should be extracting the crystal value of the clicked crystal.
     // Using the .attr("data-crystalvalue") allows us to grab the value out of the "data-crystalvalue" attribute.
     // Since attributes on HTML elements are strings, we must convert it to an integer before adding to the counter
-	var crystalClicked = ($(this).attr("#data-crystalValue"));
-    var crystalValue = parseInt(crystalClicked);
+	var crystalClicked = ($(this).attr("data-crystalValue"));
+    crystalValue = parseInt(crystalClicked);
+    console.log(crystalValue);
     
     // We then add the crystalArray to the user's "counter" which is a global variable.
     // Every click, from every crystal adds to the global counter.
-    counter += crystalClicked;
+    counter += crystalValue;
+    $("#counter").text(counter);
 
     if (counter === targetNumber) {
     	document.querySelector('#endGameMessage').innerHTML = "Congratulations! You're a rockstar."
