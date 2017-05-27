@@ -9,8 +9,11 @@
 .font-bold{font-weight: bold;}
 .font-fam{font-family: 'Quicksand', sans-serif;}
 .font-white{color: #ffffff;}
+.font-green{color: #00ACA1;}
+.font-blue{color: #0096d6;}
 
 .fs-20{font-size: 20px;}
+.fs-35{font-size: 35px;}
 .fs-50{font-size: 50px;}
 
 .line-h{line-height: 26px;}
@@ -18,6 +21,7 @@
 .marg-center{margin:5% auto;}
 
 .pad-3-10{padding: 3% 10%;}
+.pad-0-10-3-10{padding: 0% 10% 3% 10%;}
 .pad-10-10pct{padding: 10px 10%;}
 .pad-b-10{padding-bottom: 10px;}
 

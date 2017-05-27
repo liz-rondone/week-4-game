@@ -1,5 +1,3 @@
-
-
 var targetNumber = "";
 var counter = 0;
 var won = 0;
@@ -8,7 +6,7 @@ var loss = 0;
 //var purpleCrystal, blueCrystal, whiteCrystal, greenCrystal;
 //var crystalArray = [purpleCrystal, blueCrystal, whiteCrystal, greenCrystal];
 
-
+startGame();
 
 function startGame() {	//no argument
 	targetNumber = getRandomArbitrary(19,120);
@@ -33,11 +31,10 @@ function startGame() {	//no argument
 	console.log(greenCrystal);
 }
 
+
 function getRandomArbitrary(min, max) { //orange is argument
 	return Math.floor(Math.random() * (max - min)) + min; //return ends function. don't put anything afterwards
 }
-
-startGame();
 
 
 $(".img-responsive").on("click", function() {
@@ -50,7 +47,6 @@ $(".img-responsive").on("click", function() {
 	var crystalClicked = ($(this).attr("data-crystalValue"));
     crystalValue = parseInt(crystalClicked);
     console.log(crystalValue);
-    
     // We then add the crystalArray to the user's "counter" which is a global variable.
     // Every click, from every crystal adds to the global counter.
     counter += crystalValue;
